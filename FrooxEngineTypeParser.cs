@@ -15,13 +15,31 @@ internal class Program
         Dictionary<string, string> failedAssemblies = new();
         StringBuilder componentsString = new();
 
+        // Walk up from the assembly location, not the CWD: `dotnet run` sets CWD to the
+        // project dir, but VS/IDE runs set it to bin/Debug/net10.0/ where no .csproj exists.
+        string? FindCsprojPath()
+        {
+            for (
+                DirectoryInfo? dir = new(AppContext.BaseDirectory);
+                dir != null;
+                dir = dir.Parent
+            )
+            {
+                string? hit = dir.GetFiles("*.csproj").FirstOrDefault()?.FullName;
+                if (hit != null)
+                {
+                    return hit;
+                }
+            }
+
+            return null;
+        }
+
         string GetFrooxEngineDirectory()
         {
             Console.WriteLine("Getting FrooxEngine directory...");
 
-            string? csprojPath = Directory
-                .GetFiles(Directory.GetCurrentDirectory(), "*.csproj", SearchOption.AllDirectories)
-                .FirstOrDefault();
+            string? csprojPath = FindCsprojPath();
 
             if (csprojPath == null)
             {
@@ -247,16 +265,14 @@ internal class Program
             ProcessNode(node, componentsString, 0);
         }
 
-        string outputFolder = args.Length < 1 ? "./data/" : args[0];
+        // Default output next to the .csproj, not the CWD, so IDE runs land in the repo's data/ folder.
+        string defaultOutput = Path.Combine(
+            Path.GetDirectoryName(FindCsprojPath()) ?? ".",
+            "data"
+        );
+        string outputFolder = args.Length < 1 ? defaultOutput : args[0];
 
-        // Get the directory name from the file path
-        string directoryName = Path.GetDirectoryName(outputFolder)!;
-
-        // Check if the directory exists, if not, create it
-        if (!Directory.Exists(directoryName))
-        {
-            _ = Directory.CreateDirectory(directoryName);
-        }
+        _ = Directory.CreateDirectory(outputFolder);
 
         async Task ProcessCategoryAndWriteToFile(string? categoryName, string fileName)
         {
