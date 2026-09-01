@@ -59,9 +59,18 @@ internal class Program
 
             Console.WriteLine($"Default namespace: {ns}");
 
+            // csproj is read as raw XML, so MSBuild $(VAR) refs (e.g. $(USERPROFILE)) are
+            // still literal text. Expand them from the environment before probing the disk.
+            static string ExpandMsbuildVars(string value) =>
+                System.Text.RegularExpressions.Regex.Replace(
+                    value,
+                    @"\$\(([^)]+)\)",
+                    m => Environment.GetEnvironmentVariable(m.Groups[1].Value) ?? m.Value
+                );
+
             string? resonitePath = doc.Descendants(ns + "ResonitePath")
-                .FirstOrDefault(rp => Directory.Exists(rp.Value))
-                ?.Value;
+                .Select(rp => ExpandMsbuildVars(rp.Value))
+                .FirstOrDefault(Directory.Exists);
 
             if (resonitePath == null)
             {
