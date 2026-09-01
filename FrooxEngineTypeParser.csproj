@@ -8,6 +8,7 @@
     <ResonitePath Condition="Exists('/home/runner/Steam/steamapps/common/Resonite/')">/home/runner/Steam/steamapps/common/Resonite/</ResonitePath>
     <ResonitePath Condition="Exists('D:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
     <ResonitePath Condition="Exists('$HOME:\SteamLibrary\steamapps\common\Resonite\')">D:\SteamLibrary\steamapps\common\Resonite\</ResonitePath>
+    <ResonitePath Condition="Exists('$(USERPROFILE)\Steam\steamapps\common\Resonite\')">$(USERPROFILE)\Steam\steamapps\common\Resonite\</ResonitePath>
     <ResonitePath Condition="Exists('Resonite\Resonite_Data\Managed\')">Resonite\</ResonitePath>
   </PropertyGroup>
 
