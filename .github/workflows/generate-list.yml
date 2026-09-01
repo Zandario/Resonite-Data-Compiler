@@ -14,7 +14,9 @@ on:
 jobs:
   compile-resonite-data:
     name: "Compile Resonite Data"
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
+    # Linux doesn't have a build rn :(
+    # runs-on: ubuntu-latest
     strategy:
       fail-fast: false
 
