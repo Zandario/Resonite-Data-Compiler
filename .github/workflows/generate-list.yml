@@ -19,6 +19,9 @@ jobs:
     # runs-on: ubuntu-latest
     strategy:
       fail-fast: false
+    defaults:
+      run:
+        shell: bash
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
