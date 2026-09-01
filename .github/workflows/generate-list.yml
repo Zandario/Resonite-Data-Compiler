@@ -99,7 +99,7 @@ jobs:
       if: steps.check_version.outputs.should_update == 'true'
       run: |
         set -e
-        $GITHUB_WORKSPACE/bin/Release/net8.0/FrooxEngineTypeParser
+        dotnet run --project "$GITHUB_WORKSPACE" -c Release --no-build
 
         # Moves the Version file to github repo as that isn't handled by the script.
         mv $HOME/Steam/steamapps/common/Resonite/Build.version $GITHUB_WORKSPACE/data
