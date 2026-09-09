@@ -392,7 +392,9 @@
 # ReferenceField<T>#FrooxEngine.ReferenceField`1
 # ReferenceList<T>#FrooxEngine.ReferenceList`1
 # ReferenceTag<T>#FrooxEngine.ReferenceTag`1
+# TypeDictionary<K>#FrooxEngine.TypeDictionary`1
 # TypeField#FrooxEngine.TypeField
+# TypeList#FrooxEngine.TypeList
 # ValueArray<T>#FrooxEngine.ValueArray`1
 # ValueDictionary<K,T>#FrooxEngine.ValueDictionary`2
 # ValueField<T>#FrooxEngine.ValueField`1
@@ -514,6 +516,7 @@
 ## LegacyVideoPlayer#FrooxEngine.LegacyVideoPlayer
 # Utility
 ## ChannelVolumeMeter#FrooxEngine.ChannelVolumeMeter
+## FFT_RealAnalyzer#FrooxEngine.FFT_RealAnalyzer
 ## HoverPlayback#FrooxEngine.HoverPlayback
 ## IsPlayingDriver#FrooxEngine.IsPlayingDriver
 ## PlaybackPositionDriver#FrooxEngine.PlaybackPositionDriver

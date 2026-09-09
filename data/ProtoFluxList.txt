@@ -6038,6 +6038,7 @@
 ##### Parse_Ushort2#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ParsingFormatting.Parse_Ushort2
 ##### Parse_Ushort3#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ParsingFormatting.Parse_Ushort3
 ##### Parse_Ushort4#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.ParsingFormatting.Parse_Ushort4
+#### CharsToString#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings.CharsToString
 #### CompareStrings#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings.CompareStrings
 #### ConcatenateCharString#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings.ConcatenateCharString
 #### ConcatenateMultiString#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.Strings.ConcatenateMultiString
