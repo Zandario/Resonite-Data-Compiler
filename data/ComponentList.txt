@@ -415,7 +415,6 @@
 # DebugLocomotionSimulator#FrooxEngine.DebugLocomotionSimulator
 # DebugSphereRaycast#FrooxEngine.DebugSphereRaycast
 # DebugSphereSectorDistance#FrooxEngine.DebugSphereSectorDistance
-# DebugStrikePose#FrooxEngine.DebugStrikePose
 # DebugTangentSpace#FrooxEngine.DebugTangentSpace
 # DebugTestMeshThroughput#FrooxEngine.DebugTestMeshThroughput
 # DebugTextureIssue#FrooxEngine.DebugTextureIssue

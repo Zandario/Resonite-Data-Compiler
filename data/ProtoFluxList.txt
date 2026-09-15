@@ -6148,6 +6148,9 @@
 ##### SetDateTimeKind#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.SetDateTimeKind
 #### Events
 ##### IsAprilFools#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.IsAprilFools
+##### IsBlackHistoryMonth#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.IsBlackHistoryMonth
+##### IsBlackHistoryMonthUK#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.IsBlackHistoryMonthUK
+##### IsHalloween#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.IsHalloween
 ##### IsPrideMonth#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.IsPrideMonth
 #### Timespan
 ##### TimeSpanDays#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.TimeAndDate.TimeSpanDays
@@ -6365,6 +6368,7 @@
 #### LocalUserRoot#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.LocalUserRoot
 #### LocalUserSlot#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.LocalUserSlot
 #### LocalUserSpace#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.LocalUserSpace
+#### SanitizedUserUsername#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.SanitizedUserUsername
 #### SetUserScale#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.SetUserScale
 #### UserFromID#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.UserFromID
 #### UserFromUsername#FrooxEngine.ProtoFlux.Runtimes.Execution.Nodes.FrooxEngine.Users.UserFromUsername
