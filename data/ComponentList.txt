@@ -331,6 +331,7 @@
 ## SlotComponentReceiver#FrooxEngine.SlotComponentReceiver
 # Proxies
 ## AssetProxy<A>#FrooxEngine.AssetProxy`1
+## ReferenceProxy#FrooxEngine.ReferenceProxy
 ## ValueProxy<T>#FrooxEngine.ValueProxy`1
 # Utility
 ## ConfirmationHandler#FrooxEngine.ConfirmationHandler
