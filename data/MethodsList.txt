@@ -449,6 +449,8 @@ NullTextureProvider
 RenderTextureProvider
 # get_Asset()#RenderTexture
 # get_IsAssetAvailable()#Boolean
+# PrepareRecording(String, Int32, Double, Nullable`1)#RenderTextureVideoRecorder
+# StartRecording(String, Int32, Double, Nullable`1)#RenderTextureVideoRecorder
 # GetSyncMember(Int32)#ISyncMember
 # __New()#RenderTextureProvider
 # get_AssetReferenceCount()#Int32
@@ -5511,14 +5513,14 @@ FileMetadata
 # GetHashCode()#Int32
 PhotoMetadata
 # get_Version()#Int32
-# get_SingleItemKey()#String
-# get_KeepFirstSingleItem()#Boolean
-# GenerateMenuItems(ContextMenu, List`1)#Void
-# NotifyOfScreenshot(Boolean)#Task
 # get_ItemName()#String
 # get_ItemTags()#IEnumerable`1
 # GetSyncMember(Int32)#ISyncMember
 # __New()#PhotoMetadata
+# get_SingleItemKey()#String
+# get_KeepFirstSingleItem()#Boolean
+# GenerateMenuItems(ContextMenu, List`1)#Void
+# Export(Boolean)#Task
 # SetFromCurrentWorld()#Void
 # get_Slot()#Slot
 # get_IsUnderLocalUser()#Boolean
@@ -29295,11 +29297,12 @@ ItemShelf
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
-MouthTrackingStreamManager
-# Setup(User, UInt32, UInt32)#Void
-# IsParameterSupported(MouthParameterGroup)#Boolean
+MediaCaptureManager
+# PlayCaptureSound()#Void
+# PlayTimerStartSound()#Void
+# TransitionToFastTimerSound()#Void
 # GetSyncMember(Int32)#ISyncMember
-# __New()#MouthTrackingStreamManager
+# __New()#MediaCaptureManager
 # get_Slot()#Slot
 # get_IsUnderLocalUser()#Boolean
 # AssignKey(String, Int32, Boolean)#Boolean
@@ -29438,12 +29441,11 @@ MouthTrackingStreamManager
 # GetType()#Type
 # Equals(Object)#Boolean
 # GetHashCode()#Int32
-PhotoCaptureManager
-# PlayCaptureSound()#Void
-# PlayTimerStartSound()#Void
-# TransitionToFastTimerSound()#Void
+MouthTrackingStreamManager
+# Setup(User, UInt32, UInt32)#Void
+# IsParameterSupported(MouthParameterGroup)#Boolean
 # GetSyncMember(Int32)#ISyncMember
-# __New()#PhotoCaptureManager
+# __New()#MouthTrackingStreamManager
 # get_Slot()#Slot
 # get_IsUnderLocalUser()#Boolean
 # AssignKey(String, Int32, Boolean)#Boolean

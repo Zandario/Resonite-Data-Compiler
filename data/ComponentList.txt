@@ -94,6 +94,7 @@
 # Metadata
 ## AssetMetadata#FrooxEngine.AssetMetadata
 ## BitmapAssetMetadata#FrooxEngine.BitmapAssetMetadata
+## VideoMetadata#FrooxEngine.VideoMetadata
 # Procedural Animations
 ## DynamicSubtitleProvider#FrooxEngine.DynamicSubtitleProvider
 # Procedural Audio Clips
@@ -1354,8 +1355,8 @@
 # FingerPoseStreamManager#FrooxEngine.FingerPoseStreamManager
 # InteractionHandlerStreamDriver#FrooxEngine.InteractionHandlerStreamDriver
 # ItemShelf#FrooxEngine.ItemShelf
+# MediaCaptureManager#FrooxEngine.MediaCaptureManager
 # MouthTrackingStreamManager#FrooxEngine.MouthTrackingStreamManager
-# PhotoCaptureManager#FrooxEngine.PhotoCaptureManager
 # SimpleAwayIndicator#FrooxEngine.SimpleAwayIndicator
 # SimpleUserSpawn#FrooxEngine.SimpleUserSpawn
 # SpawnArc#FrooxEngine.SpawnArc
